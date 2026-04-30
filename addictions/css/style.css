@@ -1,0 +1,58 @@
+html {
+  background: #000;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* видео загружается поверх чёрного фона */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* затемнение видео, если нужно атмосфернее */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  pointer-events: none;
+}
+
+#main-content {
+  position: relative;
+  z-index: 3;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* сам блок-картинка */
+.center-card {
+  width: 520px;
+  max-width: 86vw;
+  height: auto;
+
+  transform: translateY(120px);
+
+  border-radius: 0;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
