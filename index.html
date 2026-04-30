@@ -41,7 +41,7 @@ body{background:#000;margin:0;color:#fff}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Meflakes Entertainment">
   <meta name="twitter:description" content="Blood, fear, emotions and nothin' more.">
-  <meta name="twitter:image" content="hhttps://www.meflakes.me/preview.jpg">
+  <meta name="twitter:image" content="https://www.meflakes.me/preview.jpg">
 
   <link rel="stylesheet" href="/addictions/css/style.css">
 
@@ -53,15 +53,25 @@ body{background:#000;margin:0;color:#fff}
     For the website to work, you need JavaScript.
   </noscript>
 
-  <header>
-    Sorry. Website is down for maintenance.
-    <nav>
-      Blood, fear, emotions and nothin' more.
-    </nav>
-  </header>
+  <video class="bg-video" autoplay muted loop playsinline draggable="false">
+    <source src="/addictions/video/bg.mp4" type="video/mp4">
+  </video>
 
   <main id="main-content">
+    <img
+      class="center-card"
+      src="/addictions/img/block.png"
+      alt="Meflakes Entertainment"
+      draggable="false"
+    >
   </main>
+
+  <script>
+    document.querySelectorAll('img, video').forEach(el => {
+      el.addEventListener('contextmenu', e => e.preventDefault());
+      el.addEventListener('dragstart', e => e.preventDefault());
+    });
+  </script>
 
   <footer>
   </footer>
