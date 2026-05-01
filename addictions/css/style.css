@@ -63,3 +63,20 @@ body::after {
   font-weight: normal;
   font-style: normal;
 }
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, calc(-50% + 200px)); /* ниже центра */
+
+  font-family: 'SpecialElite', sans-serif;
+  font-size: 32px;
+  color: white;
+
+  z-index: 4;
+
+  pointer-events: none;
+  user-select: none;
+}
