@@ -56,3 +56,10 @@ body::after {
   user-select: none;
   -webkit-user-drag: none;
 }
+
+@font-face {
+  font-family: 'SpecialElite';
+  src: url('/addictions/font/SpecialElite.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
