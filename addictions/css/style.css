@@ -81,7 +81,7 @@ body::after {
   user-select: none;
 }
 
-.q-text {
+.basic-text {
   position: absolute;
   top: 50%;
   left: 50%;
