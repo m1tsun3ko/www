@@ -45,8 +45,8 @@ body::after {
 
 /* сам блок-картинка */
 .center-card {
-  width: 520px;
-  max-width: 86vw;
+  width: 360px;
+  max-width: 70vw;
   height: auto;
 
   transform: translateY(120px);
