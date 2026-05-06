@@ -23,7 +23,7 @@ body {
   user-select: none;
 }
 
-/* затемнение видео, если нужно атмосфернее */
+/* затемнение видео */
 body::after {
   content: "";
   position: fixed;
@@ -43,13 +43,11 @@ body::after {
   align-items: center;
 }
 
-/* сам блок-картинка */
+/* блок картинка */
 .center-card {
   width: 420px;
   max-width: 78vw;
   height: auto;
-
-  transform: translateY(120px);
 
   border-radius: 0;
   pointer-events: none;
