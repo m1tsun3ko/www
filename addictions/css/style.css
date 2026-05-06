@@ -49,10 +49,8 @@ body::after {
   max-width: 78vw;
   height: auto;
 
+transform: translateY(120px);
 
-transform: translateY(-80px);
-
-  
   border-radius: 0;
   pointer-events: none;
   user-select: none;
